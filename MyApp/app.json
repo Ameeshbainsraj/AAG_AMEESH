@@ -9,13 +9,28 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.myapp", 
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to capture photos for your posts.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to select images for your posts."
+      }
     },
+    "platforms": ["ios", "android"],
+    "permissions": [
+      "CAMERA",
+      "MEDIA_LIBRARY"
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "bundler": "metro",
