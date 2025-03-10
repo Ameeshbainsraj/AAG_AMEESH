@@ -19,7 +19,7 @@ export const POSTS = [
     ],
   },
   {
-    imageurl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzqT4mQpeWfMaXi4SRde0qUR6OPBMfHNfhLA&s',
+    imageurl: 'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/streams/2013/April/130423/6C7055605-g-tdy-110621-hangover-4a.jpg',
     user: USERS[1].user,
     Likes: 7870,
     caption: 'Train Ride to Hogwarts.',
