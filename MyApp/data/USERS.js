@@ -1,7 +1,7 @@
 export const USERS = [
     {
       user: 'sugashaw',
-      image: 'https://i.imgur.com/dxjd7FB.jpg',
+      image: 'https://i.imgur.com/1yP1ubZb.jpg',
     },
     {
       user: 'jeff',
@@ -17,7 +17,7 @@ export const USERS = [
     },
     {
       user: 'weed101',
-      image: 'https://i.imgur.com/YVa7e2Mb.jpg',
+      image: 'https://i.imgur.com/1yP1ubZb.jpg',
     },
   ];
   

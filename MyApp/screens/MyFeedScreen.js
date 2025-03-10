@@ -1,16 +1,31 @@
 import React from "react";
-import { View, Text, SafeAreaView, StyleSheet } from "react-native";
+import { View, Text, SafeAreaView, StyleSheet,ScrollView } from "react-native";
 import Header from "../COMP/Header";
 import Stories from "../COMP/Stories";
+import Post from "../COMP/Posting";
+import { POSTS } from "../data/posts";
 
 const MyFeedScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-
       <Header />
 
-      <Stories /> {/* Add stories here, now properly spaced */}
-      
+      <View style={styles.content}>
+
+        <Stories /> {/* Ensure Stories component handles text properly */}
+
+        <ScrollView>
+
+
+            {POSTS.map((post,index) => (
+
+                <Post Posting={post} key={index}/>
+            ))}
+          
+
+        </ScrollView>
+
+      </View>
     </SafeAreaView>
   );
 };
@@ -19,7 +34,11 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'black',
     flex: 1,
-    paddingTop: 90, // Ensure there is space at the top to prevent overlapping
+    paddingTop: 90,
+  },
+  content: {
+    marginTop: 10,
+    paddingHorizontal: 20,
   },
 });
 
